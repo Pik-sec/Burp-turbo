@@ -28,5 +28,5 @@ def queueRequests(target,wordlists):
 
 def handleResponse(req,interesting):
 # currently available attributes are req.status, req.wordcount, req.length and req.response
-    if req.status == 302:
+    if req.status == 200:
         table.add(req)
